@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firehouse Pizza</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <h1>Welcome to Firehouse Pizza!</h1>
+
+    <!-- Pizza Images -->
+    <img src="supreme.jpg" alt="Supreme Pizza">
+
+    <p>Customize your pizza by selecting your favorite type of pizza and toppings:</p>
+    <form action="/order" method="post">
+        
+        <!-- Pizza Types! -->
+        <label for="pizza-type">Choose your pizza type:</label>
+        <select id="pizza-type" name="pizza-type">
+            <option value="meat lovers">Meat Lovers</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="margherita">Margherita</option>
+            <option value="hawaiian">Hawaiian</option>
+            <option value="greek">Greek</option>
+            <option value="detroit-style">Detroit Style</option>
+            <option value="capricciosa">Capricciosa</option>
+            <option value="four-cheese">Four Cheese</option>
+            <option value="supreme">Supreme</option>
+        </select>
+        <br>
+
+        
+        <!-- Pizza Crust!! -->
+        <fieldset>
+            <legend>Choose your pizza crust:</legend>
+            <input type="radio" id="cheese-crust" name="crust" value="cheese-crust">
+            <label for="cheese-crust">Cheese Crust</label>
+
+            <input type="radio" id="normal" name="crust" value="normal">
+            <label for="normal">Traditional</label>
+
+            <input type="radio" id="thin-crust" name="crust" value="thin-crust">
+            <label for="thin-crust">Thin Crust</label>
+        </fieldset>
+        <br>
+
+        <!-- Pizza Toppings! -->
+        <fieldset>
+            <legend>Select your toppings:</legend>
+            <input type="checkbox" id="cheese" name="toppings" value="cheese">
+            <label for="cheese">Extra Cheese</label><br>
+
+            <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+
+            <input type="checkbox" id="olives" name="toppings" value="olives">
+            <label for="olives">Olives</label><br>
+            
+            <input type="checkbox" id="bell-peppers" name="toppings" value="bell-peppers">
+            <label for="bell-peppers">Bell Peppers</label><br>
+            
+            <input type="checkbox" id="onions" name="toppings" value="onions">
+            <label for="onions">Onions</label><br>
+            
+            <input type="checkbox" id="banana-peppers" name="toppings" value="banana-peppers">
+            <label for="banana-peppers">Banana Peppers</label><br>
+            
+            <input type="checkbox" id="green-peppers" name="toppings" value="green-peppers">
+            <label for="green-peppers">Green Peppers</label><br>
+            
+            <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+            <label for="pineapple">Pineapple</label><br>
+            
+            <input type="checkbox" id="sausage" name="toppings" value="sausage">
+            <label for="sausage">Sausage</label><br>
+            
+            <input type="checkbox" id="ham" name="toppings" value="ham">
+            <label for="ham">Ham</label><br>
+            
+            <input type="checkbox" id="spinach" name="toppings" value="spinach">
+            <label for="spinach">Spinach</label><br>
+            
+            <input type="checkbox" id="no-toppings" name="toppings" value="no-toppings">
+            <label for="no-toppings">No Toppings</label><br>
+
+        </fieldset>
+        <br>
+
+        <!-- Pizza Size! -->
+        <fieldset>
+            <legend>Choose your pizza size:</legend>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small</label>
+
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+        </fieldset>
+        <br>
+
+        <!-- Customer Information -->
+        <label for="customer-name">Your Name:</label>
+        <input type="text" id="customer-name" name="customer-name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- Additional Comments for User to add -->
+        <label for="comments">Special instructions?</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+        <!-- Place Order Button -->
+        <input type="submit" value="Place Order">
+    </form>
+
+    <!-- Pizza Images -->
+    <img src="veggie.jpg" alt="Vegetarian Pizza">
+
+</body>
+</html>
